@@ -1,4 +1,4 @@
-# IPC Histogram Generator
+# Multi-Process IPC File Analyzer 
 This program analyzes letter frequencies in multiple files using concurrent child processes. Each child reads a file, calculates a histogram of letters (a–z), and sends it to the parent via a pipe. The parent handles SIGCHLD signals to detect terminated children, reads their histograms, and saves the results to files.
 
 # Key OS Concepts Applied
